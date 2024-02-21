@@ -1,0 +1,157 @@
+:root {
+  --bg-primary: #3d3d3d;
+  --bg-secundary: #4b4b4b;
+  --main: #00e77f;
+  --white: #fff;
+}
+body {
+  margin: auto;
+  max-width: 1440px;
+  font-family: sans-serif;
+  background-color: var(--bg-primary);
+}
+
+header {
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--bg-secundary);
+}
+
+header h3 {
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+img {
+  width: 100%;
+}
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  color: #000;
+  background-color: var(--white);
+}
+.banner {
+  text-align: center;
+  color: var(--white);
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+}
+
+.banner-img {
+  width: 50%;
+}
+.banner h3 {
+  color: var(--main);
+}
+#courses {
+  margin-top: 3rem;
+}
+.course {
+  text-align: center;
+  background-color: var(--bg-secundary);
+  border-radius: 2rem;
+}
+
+.tutor-title {
+  margin-top: 4rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.tutor-title span {
+  color: var(--main);
+}
+
+.tutor {
+  text-align: center;
+  color: var(--white);
+}
+
+.tutor img {
+  border-radius: 1rem;
+}
+
+footer {
+  background-color: var(--bg-secundary);
+  margin-top: 6rem;
+}
+
+.footer-icons {
+  text-align: center;
+  color: var(--white);
+  padding: 2rem;
+  font-size: 3rem;
+}
+
+.footer-icons {
+  margin-right: 1rem;
+}
+
+.footer-icons i {
+  margin-right: 1rem;
+}
+
+.footer-credit {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--white);
+  border-top: 0.1rem solid var(--white);
+  padding: 2rem;
+}
+.footer-credit span {
+  color: var(--main);
+}
+
+/* \A partir de 768 px */
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+  }
+
+  #courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .course {
+    width: 48%;
+  }
+  .tutors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .course {
+    width: 32%;
+  }
+  .tutor {
+    width: 32%;
+  }
+  .tutor img {
+    height: 35rem;
+    object-fit: cover;
+  }
+}
