@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#student-name {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#content-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#content-list li {
+    border-bottom: 1px solid #eee;
+    padding-left: 20px; /* Adiciona recuo para todos os itens da lista */
+}
+
+#content-list li:last-child {
+    border-bottom: none;
+}
+
+#content-list li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+#content-list li a:hover {
+    background-color: #f0f0f0;
+}
+
+.disabled {
+    pointer-events: none;
+    color: gray;
+}
+
+.visited {
+    color: green;
+}
+
+.subcontent {
+    padding-left: 20px; /* Adiciona recuo apenas para os subitens da lista */
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#report-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#report-btn:hover {
+    background-color: #0056b3;
+}
+
+#clear-log-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#clear-log-btn:hover {
+    background-color: #c82333;
+}

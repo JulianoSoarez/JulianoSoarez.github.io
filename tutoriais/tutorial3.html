@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo 3 - Sensores: Sensor Luminosidade (LDR)</title>
+    <link rel="stylesheet" href="../css/estilo-tutorial.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Conteúdo 3 - Sensores: Sensor Luminosidade (LDR)</h1>
+
+        <p>
+            <strong>Sobre a aula:</strong><br>
+        <ul>
+            <li>Compreender que os sensores são componentes responsáveis pela percepção e
+                interação dos robôs com o mundo;</li>
+            <li>Entender a funcionalidade do sensor LDR e como ele pode ser incorporado num
+                circuito eletrônico com a placa Arduino;</li>
+            <li>Criar um circuito que meça o nível de luminosidade do ambiente.</li>
+        </ul>
+        </p>
+        <p>
+            <strong>Materiais para aula:</strong>
+        </p>
+
+        <ul>
+            <li>1 x Arduino Uno;</li>
+            <li>1 x Cabo USB para comunicação;</li>
+            <li>1 x Protoboard 400 pontos;</li>
+            <li>1 x Sensor LDR;</li>
+            <li>1 x Led de 5mm 1.9 ~ 2.2(V) Volts e 20(mA) Miliampère;</li>
+            <li>1 x Resistor 10(kΩ) Kiloohm;</li>
+            <li>1 x Resistor 220(Ω) Ohm;</li>
+            <li>6 x Jumpers.</li>
+        </ul>
+        <hr>
+
+        <h3>Título da aula</h3>
+
+        <div class="container2">
+            <h2>Sensores</h2>
+        </div>
+
+        <p>
+            <strong>Orientações:</strong>
+            Ler o tema da aula e comentar com os alunos sobre a infinidade
+            de tipos de sensores que podem ser conectados a projetos com o
+            Arduino e fornecer as mais variadas informações, como temperatura,
+            umidade e variação da intensidade luminosa, entre outras.
+        </p>
+        <hr>
+
+        <h3>Contexto</h3>
+
+        <p>
+            <b>Orientações:</b>
+            Construa um cenário que incentive a conversa em sala de aula para que os alunos possam
+            reconhecer a análise da imagem. Essa conversa inicial é para debater o significado
+            da palavra <b>sensor</b>, que deve ser baseada em imagens e explicações sobre o assunto.
+        </p>
+
+        <br><br><br>
+
+        <img class="ArduinoDisplayed" src="../img/sensoresArduino.png" alt="" title="Sensores">
+        <p style="text-align:center;"><b>Imagem sensores</b><br>
+        </p>
+        <br>
+        <br>
+
+        <p><b>1. O que são Sensores?</b></p>
+
+        <p><b>2. Onde podem ser utilizados? </b></p>
+
+        <hr>
+
+        <h3>Questão Disparadora</h3>
+        <p>Após o levantamento prévio do conhecimento dos alunos,
+            apresenta-se a questão disparadora.</p>
+
+        <div class="container2">
+            <h2>Dentro do universo do Arduino para que servem os sensores?</h2>
+        </div>
+
+        <p>
+            <b>Orientações:</b>
+            Ouça as respostas dos alunos, não é preciso fazer anotações,
+            pois essas discussões serão organizadas ao término desta proposta de aula.
+            <br><br>
+
+        </p>
+        <hr>
+
+        <h3>Atividade Investigativa</h3>
+
+        <p>
+            <b>Orientações:</b>
+            Comece explicando aos alunos o que é um sensor de luminosidade LDR
+            (Light Dependent Resistor) e como ele funciona.
+            Destaque que um LDR é um resistor cuja resistência varia de acordo
+            com a intensidade da luz incidente sobre ele. <b>Quanto mais luz incidir
+                sobre sua superfície, menor será a resistência, e quanto menos luz incidir
+                sobre sua superfície, maior será a resistência.</b>
+            <br>
+            <br>
+            Peça para os alunos acessarem o link do projeto a seguir:
+
+        </p>
+        <div class="container_AtivInvest">
+            <div id="texto_AtivInvest">
+                <p>
+                    <a href="https://www.tinkercad.com/things/2l71iM0AbBN-projeto-controlar-a-luminosidade-de-um-led-com-sensor-ldr?sharecode=SyV80CrhIZJZH9qCOs46oqIHzbGH2siJ2y7QViKpINQ"
+                        target="_blank">Projeto controlar a luminosidade de um LED com sensor LDR</a>
+
+                <ol>
+                    <li>De acordo com projeto elaborado no Tinkercad qual é o valor
+                        da resistência medida pelo multímetro quando há muita
+                        luminosidade atuando no sensor LDR?</li>
+                    <li>De acordo com projeto elaborado no Tinkercad qual é o valor
+                        da resistência medida pelo multímetro quando não há
+                        luminosidade atuando no sensor LDR?</li>
+                </ol>
+                <br><br>
+                O que é um sensor LDR:
+                <br>
+                <a href="https://www.kitsarduino.com.br/cmp/ldr.html"
+                    target="_blank">https://www.kitsarduino.com.br/cmp/ldr.html</a>
+                <br>
+                <br>
+                Para conhecer sobre escala Ôhmica Decimal, acesse o link:
+                <br>
+                <a href="https://www.convertworld.com/pt/resistencia-eletrica/ohm.html"
+                    target="_blank">https://www.convertworld.com/pt/resistencia-eletrica/ohm.html</a>
+                <br>
+                <br>
+                </p>
+            </div>
+            <img src="../img/sensorLDR.jpg" alt="Sensor LDR" title="Sensor LDR">
+        </div>
+        <hr>
+
+        <h3>Sistematização</h3>
+        <p>
+            <b>Descreva os conceitos de eletrônica utilizados para
+                construção de um circuito com sensor LDR e Arduino:</b>
+        </p>
+        <br><br><br>
+
+        <img class="ArduinoDisplayed" src="../img/projetoLDR_comSketch.png" alt="Conceitos de básicos eletrônica"
+            title="Circuito com sensor LDR">
+        <p style="text-align:center;"><strong>Circuito com sensor LDR</strong></p>
+        <br><br><br>
+
+        <p>
+        <ol>
+            <li>Qual é o princípio de funcionamento do sensor LDR?</li>
+            <li>Como o sensor LDR detecta a luz ambiente?</li>
+            <li>Dê exemplos de projetos que poderiam se beneficiar do uso deste sensor:</li>
+        </ol>
+        <br>
+        </p>
+        <hr>
+        <h3>Atividade Prática</h3>
+
+        <p>
+            Utilizar a plataforma de simulação online Thinkercad.
+            <br><br>
+            Para montar o circuito na protoboard observe os seguintes pontos:
+        <ul>
+            <li>
+                Assim como os resistores comuns, o LDR não possui polaridade e sua resistência é medida em ohms (Ω);
+            </li>
+            <li>
+                Um terminal do LDR deve ser conectado ao 5V e o outro ao pino analógico do Arduino,
+                neste caso usamos o pino A0. Conectamos também uma resistência de 10 kΩ entre o
+                pino A0 e o GND da placa.
+            </li>
+        </ul>
+        <br><br>
+
+        <img class="ArduinoDisplayed" src="../img/atividade_LeituraLDR.png" alt="Conceitos de básicos eletrônica"
+            title="Circuito com sensor LDR">
+        <p style="text-align:center;"><strong>Circuito base para a atividade</strong></p>
+        <br><br><br>
+        Acessar o link da atividade a seguir:
+        <br><br>
+
+        <a href="https://www.tinkercad.com/things/jgzlgMeXtPP-atividade-leitura-ldr?sharecode=aBOX5XuvIwqVTuWizaVfbHctYhEcc-vLvk0f6guPIaQ"
+            target="_blank">Atividade medir o valor do sensor LDR e visualizar no monitor serial</a>
+        </p>
+        <hr>
+        <h3>Materiais de apoio:</h3>
+        <p>
+
+            <a href="https://www.kitsarduino.com.br/cmp/ldr.html" target="_blank">O que é um LDR?</a>
+            <br>
+            <br>
+
+            <a href="https://blog.eletrogate.com/controle-de-luminosidade-com-arduino-e-sensor-ldr/"
+                target="_blank">Controle de luminosidade com Arduino e sensor LDR;</a>
+            <br>
+            <br>
+
+            <a href="https://www.blogdarobotica.com/2020/09/29/utilizando-o-sensor-de-luminosidade-ldr-no-arduino/"
+                target="_blank">Utilizando o Sensor de Luminosidade LDR no Arduino;</a>
+            <br>
+            <br>
+            <b>*Indicação de material*</b><br>
+            Faça o download da apostila e confira:
+            Exemplo 4 - Acionamento de LED conforme do Luz ambiente.
+            <br>
+
+            <a href="https://conteudo.eletrogate.com/apostila-arduino-iniciante" target="_blank">Eletrogate - Apostila
+                Arduino Iniciante.</a>
+            <br>
+            <br>
+            <br>
+        </p>
+        <hr>
+        <div class="buttons">
+            <a href="../index.html" class="button">Início</a>
+            <a href="tutorial4.html" class="button" onclick="logAccess('tutoriais/tutorial4.html')">Próximo</a>
+        </div>
+    </div>
+    <script src="../js/dinamico.js"></script>
+</body>
+
+</html>

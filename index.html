@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdos de Eletrônica Básica</title>
+    <link rel="stylesheet" href="css/estilo-principal.css">
+    <!--Caso a estilização da página inicial não funcione, use o caminho a seguir-->
+    <!--<link rel="stylesheet" href="../css/estilo-principal.css">-->
+</head>
+
+<body>
+    <h1>Conteúdos de Eletrônica Básica</h1>
+    <input type="text" id="student-name" onchange="setStudentName()" placeholder="Digite seu nome">
+    <ol id="content-list">
+        <li><a href="tutoriais/tutorial1.html" id="content1">Conteúdo 1 - Circuito Elétrico Simples com Arduino</a></li>
+        <li><a href="tutoriais/tutorial2.html" id="content2">Conteúdo 2 - Eletrônica com Arduino</a></li>
+        <li><a href="tutoriais/tutorial3.html" id="content3">Conteúdo 3 - Sensores: Sensor Luminosidade (LDR)</a></li>
+        <li><a href="tutoriais/tutorial4.html" id="content4">Conteúdo 4 - Sensores: Sensor de Temperatura TMP36</a></li>
+        <!-- Adicione mais itens conforme necessário -->
+    </ol>
+
+    <div class="buttons">
+        <button id="report-btn">Imprimir Relatório de Acessos</button>
+        <button id="clear-log-btn">Limpar Log de Acessos</button>
+    </div>
+
+    <script src="js/dinamico-principal.js"></script>
+    <script src="js/dinamico.js"></script>
+</body>
+
+</html>

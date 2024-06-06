@@ -1,0 +1,100 @@
+/* Estilos comuns */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+header {
+    padding: 1rem;
+    text-align: center;
+}
+
+div.container2 {
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+IMG.ArduinoDisplayed {
+    width: 95%;
+    height: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 0.05rem;
+    border-radius: 1rem;
+}
+
+.container_AtivInvest {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ComponentsDisplayed {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+.texto_AtivInvest {
+    display: block;
+}
+
+p {
+    text-align: justify;
+}
+
+/* Estilizando links como botões */
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a.button:hover {
+    background-color: #0056b3;
+}
+
+a.button:first-child {
+    background-color: #dc3545;
+}
+
+a.button:first-child:hover {
+    background-color: #c82333;
+}
